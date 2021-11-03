@@ -61,7 +61,7 @@ def main():
             col1.write('''
 		    ## Results 🔍 
 		    ''')
-            col1.success(f"{prediction.item()}")
+            col1.success(f"salut{prediction.item()}")
 
     st.warning("Note: This A.I application is for educational/demo purposes only and cannot be relied upon.")
     hide_menu_style = """
