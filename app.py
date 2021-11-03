@@ -38,19 +38,19 @@ def main():
 
     with col2:
         st.subheader(" Find out the most suitable crop to grow in your farm 👨‍🌾")
-        Age = st.number_input("Age (0 = 99)", 0,99)
-        Sex = st.number_input("Sex (0 = Male, 1 = Female", 0, 1)
-        CPT = st.number_input("Chest Pain Type (0 = No pain, 3 = Tremendeous pain)", 0, 3)
-        RBP = st.number_input("Resting Blood Pressure (94 = 200)", 94, 200)
-        Chol = st.number_input("Cholesterol (126 = 564)", 126, 564)
-        FBS = st.number_input("Fasting Blood Sugar (0 = false, 1 = true)", 0, 1)
-        Restecg = st.number_input("Resting Electrocardiographic Results (0 = 2", 0, 2)
-        Thalach = st.number_input("Maximum Heart Rate Achieved (71 = 202)", 71, 202)
-        Exang = st.number_input("Exercise Induced Angina (0 = no, 1 = yes)", 0, 1)
-        Oldpeak = st.number_input("ST depression induced by exercise relative to rest (0.0 - 6.2)", 0.0, 6.2)
-        Slope = st.number_input("The slope of the peak exercise ST segment (0 - 2)", 0, 2)
-        Ca = st.number_input("Number of major vessels (0 - 3)", 0, 3)
-        Thal = st.number_input("3 = normal; 6 = fixed defect; 7 = reversable defect (0 - 7)", 0, 7)
+        Age = st.number_input("Age (0 - 99)", 0,99, int)
+        Sex = st.number_input("Sex (0 = Male, 1 = Female", 0, 1, int)
+        CPT = st.number_input("Chest Pain Type (0 = No pain, 3 = Tremendeous pain)", 0, 3, int)
+        RBP = st.number_input("Resting Blood Pressure (94 = 200)", 94, 200, int)
+        Chol = st.number_input("Cholesterol (126 = 564)", 126, 564, int)
+        FBS = st.number_input("Fasting Blood Sugar (0 = false, 1 = true)", 0, 1, int)
+        Restecg = st.number_input("Resting Electrocardiographic Results (0 = 2", 0, 2, int)
+        Thalach = st.number_input("Maximum Heart Rate Achieved (71 = 202)", 71, 202, int)
+        Exang = st.number_input("Exercise Induced Angina (0 = no, 1 = yes)", 0, 1, int)
+        Oldpeak = st.number_input("ST depression induced by exercise relative to rest (0.0 - 6.2)", 0.0, 6.2, float)
+        Slope = st.number_input("The slope of the peak exercise ST segment (0 - 2)", 0, 2, int)
+        Ca = st.number_input("Number of major vessels (0 - 3)", 0, 3, int)
+        Thal = st.number_input("3 = normal; 6 = fixed defect; 7 = reversable defect (0 - 7)", 0, 7, int)
 
 
         feature_list = [Age, Sex, CPT, RBP, Chol, FBS, Restecg, Thalach, Exang, Oldpeak, Slope, Ca, Thal]
