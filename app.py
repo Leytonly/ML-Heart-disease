@@ -47,7 +47,7 @@ def main():
         ph = st.number_input("Ph", 0.0,100000.0)
         rainfall = st.number_input("Rainfall in mm",0.0,100000.0)
 
-        feature_list = [Age, Sex, N, P, K, temp, humidity, ph, rainfall]
+        feature_list = [Age, Sex, P, K, temp, humidity, ph, rainfall]
         single_pred = np.array(feature_list).reshape(1,-1)
         
         if st.button('Predict'):
