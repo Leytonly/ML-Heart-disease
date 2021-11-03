@@ -38,8 +38,8 @@ def main():
     with col2:
         st.subheader(" Find out the most suitable crop to grow in your farm 👨‍🌾")
         Age = st.number_input("Age (0 - 99)", 1,99)
-        Sex = st.number_input("Sex (0 = Male, 1 = Female", 0, 1)
-        CPT = st.number_input("Chest Pain Type (0 = No pain, 3 = Tremendeous pain)", 0, 3)
+        Sex = st.number_input("Sex (0 = Male, 1 = Female", 0,1)
+        CPT = st.number_input("Chest Pain Type (0 = No pain, 3 = Tremendeous pain)", 0,3)
         N = st.number_input("Nitrogen", 1,10000)
         P = st.number_input("Phosporus", 1,10000)
         K = st.number_input("Potassium", 1,10000)
