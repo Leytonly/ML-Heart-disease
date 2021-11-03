@@ -59,9 +59,9 @@ def main():
             loaded_model = load_model('model.pkl')
             prediction = loaded_model.predict(single_pred)
             col1.write('''
-		    ## Results 🔍 
+		    ## Results (0 = You probably have no disease - 1 = You probably have a heart disease) 🔍 
 		    ''')
-            col1.success(f"salut{prediction.item()}")
+            col1.success(f"{prediction.item()}")
 
     st.warning("Note: This A.I application is for educational/demo purposes only and cannot be relied upon.")
     hide_menu_style = """
