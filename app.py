@@ -38,7 +38,7 @@ def main():
     with col2:
         st.subheader(" Find out if you have a heart disease")
         Age = st.number_input("Age (0 - 99)", 0,99, 0)
-        Sex = st.number_input("Sex (0 = Male, 1 = Female", 0, 1, 0)
+        Sex = st.number_input("Sex (0 = Female, 1 = Male)", 0, 1, 0)
         CPT = st.number_input("Chest Pain Type (0 = No pain, 3 = Tremendeous pain)", 0, 3, 0)
         RBP = st.number_input("Resting Blood Pressure (94 = 200)", 94, 200, 94)
         Chol = st.number_input("Cholesterol (126 = 564)", 126, 564, 126)
