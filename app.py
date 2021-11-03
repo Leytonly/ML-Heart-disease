@@ -6,7 +6,7 @@ import pickle
 import warnings
 
 
-st.beta_set_page_config(page_title="Crop Recommender", page_icon="🌿", layout='centered', initial_sidebar_state="collapsed")
+st.beta_set_page_config(page_title="Heart Disease Predicter", page_icon="", layout='centered', initial_sidebar_state="collapsed")
 
 def load_model(modelfile):
 	loaded_model = pickle.load(open(modelfile, 'rb'))
@@ -16,7 +16,7 @@ def main():
     # title
     html_temp = """
     <div>
-    <h1 style="color:MEDIUMSEAGREEN;text-align:left;"> Crop Recommendation  🌱 </h1>
+    <h1 style="color:MEDIUMSEAGREEN;text-align:left;"> Heart Disease Predicter </h1>
     </div>
     """
     st.markdown(html_temp, unsafe_allow_html=True)
@@ -31,12 +31,12 @@ def main():
             """)
         '''
         ## How does it work ❓ 
-        Complete all the parameters and the machine learning model will predict the most suitable crops to grow in a particular farm based on various parameters
+        Complete all the parameters and the machine learning model will predict if the patient has a heart disease
         '''
 
 
     with col2:
-        st.subheader(" Find out the most suitable crop to grow in your farm 👨‍🌾")
+        st.subheader(" Find out if you have a heart disease")
         Age = st.number_input("Age (0 - 99)", 0,99, 0)
         Sex = st.number_input("Sex (0 = Male, 1 = Female", 0, 1, 0)
         CPT = st.number_input("Chest Pain Type (0 = No pain, 3 = Tremendeous pain)", 0, 3, 0)
