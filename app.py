@@ -40,9 +40,6 @@ def main():
         Age = st.number_input("Age (0 - 99)", 1,99)
         Sex = st.number_input("Sex (0 = Male, 1 = Female", 0, 1)
         CPT = st.number_input("Chest Pain Type (0 = No pain, 3 = Tremendeous pain)", 0, 3)
-        RBP = st.number_input("Resting Blood Pressure (94 = 200)", 94, 200)
-        Chol = st.number_input("Cholesterol (126 = 564)", 126, 564)
-        FBS = st.number_input("Fasting Blood Sugar (0 = false, 1 = true)", 0, 1)
         N = st.number_input("Nitrogen", 1,10000)
         P = st.number_input("Phosporus", 1,10000)
         K = st.number_input("Potassium", 1,10000)
@@ -51,7 +48,7 @@ def main():
         ph = st.number_input("Ph", 0.0,100000.0)
         rainfall = st.number_input("Rainfall in mm",0.0,100000.0)
 
-        feature_list = [Age, Sex, CPT, RBP, Chol, FBS, N, P, K, temp, humidity, ph, rainfall]
+        feature_list = [Age, Sex, CPT, N, P, K, temp, humidity, ph, rainfall]
         single_pred = np.array(feature_list).reshape(1,-1)
         
         if st.button('Predict'):
