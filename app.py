@@ -37,8 +37,8 @@ def main():
 
     with col2:
         st.subheader(" Find out the most suitable crop to grow in your farm 👨‍🌾")
-        Age = st.number_input("Age (0 - 99)", 0,99)
-        Sex = st.number_input("Sex", int(0),int(1))
+        Age = st.number_input("Age (0 - 99)", int(0),99)
+        Sex = st.number_input("Sex", int(0),1)
         P = st.number_input("Phosporus", 1,10000)
         K = st.number_input("Potassium", 1,10000)
         temp = st.number_input("Temperature",0.0,100000.0)
