@@ -14,7 +14,7 @@ dataset = read_csv(path, delimiter=',')
 array = dataset.values
 X = array[:,1:13]
 y = array[:,13]
-X_train, X_validation, Y_train, Y_validation = train_test_split(X, y, test_size=0.20, random_state=1, shuffle=True)
+X_train, X_validation, Y_train, Y_validation = train_test_split(X, y, test_size=0.20, random_state=2, shuffle=True)
 
 models = []
 
