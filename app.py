@@ -37,7 +37,6 @@ def main():
 
     with col2:
         st.subheader(" Find out the most suitable crop to grow in your farm 👨‍🌾")
-        Age = st.number_input("Age (0 - 99)", 0,99)
         N = st.number_input("Nitrogen", 1,10000)
         P = st.number_input("Phosporus", 1,10000)
         K = st.number_input("Potassium", 1,10000)
@@ -46,7 +45,7 @@ def main():
         ph = st.number_input("Ph", 0.0,100000.0)
         rainfall = st.number_input("Rainfall in mm",0.0,100000.0)
 
-        feature_list = [Age, N, P, K, temp, humidity, ph, rainfall]
+        feature_list = [N, P, K, temp, humidity, ph, rainfall]
         single_pred = np.array(feature_list).reshape(1,-1)
         
         if st.button('Predict'):
